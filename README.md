@@ -1,13 +1,8 @@
 # XCEP
-## Sobre
-O XCEP é um projeto para consultar pelo CEP as informações do endereço.
-O projeto é integrado com os serviços do ViaCEP e da WideNet.
+## About
 
-O projeto é uma prova de conceito dessa linguagem, o intuito é educativo e não deixa de ser uma ótima ferramenta para usar no seu projeto em produção.
-
-## Instalação
-
-Adicione `xcep` na sua lista de dependencias `mix.exs`:
+XCEP is a library to search for CEP, it is the result of a tutorial on how to consume data from an external api 
+## Installation
 
 ```elixir
 def deps do
@@ -17,21 +12,10 @@ def deps do
 end
 ```
 
-## Como utilizar
-
-Depois de adicionada a dependencia no projeto execute:
+## Using
 
 ```elixir
-XCEP.cep "17250000"
-
-#  %{
-#    "bairro" => "",
-#    "cep" => "17250000",
-#    "complemento" => "",
-#    "localidade" => "Bariri",
-#    "logradouro" => "",
-#    "uf" => "SP"
-#  }
+  XCEP.cep "12345678"
 
 ```
 ## Autor
